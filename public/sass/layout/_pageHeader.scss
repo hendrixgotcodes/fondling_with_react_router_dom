@@ -1,0 +1,53 @@
+@import '../utils/variables';
+
+.pageHeader{
+
+    width: 100%;
+    height: 5rem;
+    background-color: $primary_black;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: $white;
+
+    .logo{
+        font-family: 'Hanalei', cursive;
+        font-size: 1.5rem;
+    }
+
+    .menu{
+
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+
+        .current{
+
+            position: relative;
+
+            &::after{
+                position: absolute;
+                width: 100%;
+                height: 20%;
+                content: '';
+                border-radius: 4px;
+                background-color: $complementary_color;
+                bottom: -20%;
+                right: 0;
+                font-size: .3rem;
+            }
+
+        }
+
+    }
+
+}
